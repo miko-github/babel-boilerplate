@@ -1,0 +1,25 @@
+{
+	"name": "babel-boilerplate",
+	"version": "0.0.1",
+	"description": "description",
+	"main": "src/index.js",
+	"scripts": {
+		"start:watch": "nodemon --exec babel-node src/index.js",
+		"build:watch": "babel --watch src/index.js --out-dir dist",
+		"start": "node dist/index.js",
+		"build": "babel src --out-dir dist",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"boilerplate"
+	],
+	"author": "miko-github",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "^7.14.2",
+		"@babel/node": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
+		"nodemon": "^2.0.7"
+	}
+}
